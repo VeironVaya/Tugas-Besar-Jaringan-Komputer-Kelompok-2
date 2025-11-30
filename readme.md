@@ -1,8 +1,13 @@
 # KELOMPOK 2
 
-103012300100 Veiron Vaya Yarief
-103012300452 Gavin Benjiro Ramadhan
-103012300xxx Arkanzi Suharjanto
+# KELOMPOK 2
+
+| NIM          | Nama                      |
+|--------------|---------------------------|
+| 103012300100 | Veiron Vaya Yarief        |
+| 103012300452 | Gavin Benjiro Ramadhan    |
+| 103012300xxx | Arkanzi Suharjanto        |
+
 
 - [KELOMPOK 2](#kelompok-2)
   - [TES LOKAL](#tes-lokal)
