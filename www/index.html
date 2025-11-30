@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Kelompok 2 - Modern</title>
+    
+    <!-- Mengimpor Font dari Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- Gaya Dasar & Reset --- */
+        :root {
+            --primary-color: #4a69bd; /* Warna biru utama */
+            --secondary-color: #6c5ce7; /* Warna ungu sekunder */
+            --background-color: #f5f6fa;
+            --card-background: #ffffff;
+            --text-color: #2c3e50;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, var(--background-color) 0%, #dfe6e9 100%);
+            color: var(--text-color);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        /* --- Header --- */
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+        }
+
+        /* --- Container Anggota --- */
+        .members-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        /* --- Kartu Anggota --- */
+        .member-card {
+            background-color: var(--card-background);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 20px var(--shadow-color);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Efek saat kursor di atas kartu */
+        .member-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Avatar Lingkaran */
+        .member-card .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .member-card h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--text-color);
+            margin-bottom: 5px;
+        }
+
+        .member-card p {
+            font-size: 1rem;
+            color: #95a5a6;
+        }
+
+        /* --- Responsif untuk Layar Kecil --- */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.2rem;
+            }
+            .header p {
+                font-size: 1rem;
+            }
+            body {
+                padding: 20px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1>Kelompok 2</h1>
+        <p>Berkenalan dengan Tim Kami</p>
+    </header>
+
+    <main class="members-container">
+        <!-- Kartu Anggota 1 -->
+        <div class="member-card">
+            <div class="avatar">VVY</div> <!-- Ganti dengan inisial nama -->
+            <h3>Veiron Vaya Yarief</h3>
+            <p>103012300100</p>
+        </div>
+
+        <!-- Kartu Anggota 2 -->
+        <div class="member-card">
+            <div class="avatar">GBR</div> <!-- Ganti dengan inisial nama -->
+            <h3>Gavin Benjiro Ramadhan</h3>
+            <p>103012300452</p>
+        </div>
+
+        <!-- Kartu Anggota 3 -->
+        <div class="member-card">
+            <div class="avatar">AKJ</div> <!-- Ganti dengan inisial nama -->
+            <h3>Arkanzi Suharjanto</h3>
+            <p>103012300xxx</p>
+        </div>
+    </main>
+
+</body>
+</html>
